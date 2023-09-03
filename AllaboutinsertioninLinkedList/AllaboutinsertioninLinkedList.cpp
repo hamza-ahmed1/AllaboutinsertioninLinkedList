@@ -64,6 +64,8 @@ void insertafter(Node* a, int val) {
     if (a==NULL) {
         cout << "node can't be null" << endl;
     }
+    else
+    {
     //create new node 
     Node* newnode = new Node(val);
 
@@ -71,6 +73,7 @@ void insertafter(Node* a, int val) {
 
     newnode->nextaddress = a->nextaddress;
     a->nextaddress = newnode;
+    }
 }
 int main()
 {
